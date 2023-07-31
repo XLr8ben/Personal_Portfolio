@@ -28,8 +28,14 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
-    height: 80px;
+    /* width: 140px; */
+    /* height: 80p; */
+    margin-top:10px ;
+    font-size: 25px;
+    color: burlywood;
+}
+.logo span{
+    color: white;
 }
 nav ul li{
     display: inline-flex;
@@ -56,7 +62,7 @@ nav ul li a:hover:after{
     width: 100%;
 }
 .header-text{
-    margin-top: 15%;
+    margin-top: 20%;
     font-size: 30px;
     /* text-align: center; */
 }
