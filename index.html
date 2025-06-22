@@ -2,15 +2,18 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Portfolio Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-  <script src="https://kit.fontawesome.com/2c13b63812.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Personal Portfolio Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/2c13b63812.js" crossorigin="anonymous"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
- 
+
     <div id="header">
         <div class="container">
             <nav>
@@ -26,24 +29,43 @@
                 </ul>
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
+            <!-- <div class="header-text">
                 <p>Namaste !</p>
                 <h1>Hi, I am <span>Ribhav</span><br> from India</h1>
+            </div> -->
+            <div class="header-text" data-aos="fade-up" data-aos-duration="1500">
+                <p>Hey there!</p>
+                <h1>I'm <span>Ribhav</span><br>a Full Stack Developer from India</h1>
+
             </div>
+
         </div>
     </div>
-<!-- ------about section---------->
+    <!-- ------about section---------->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg">
+                <!-- <div class="about-col-1"> -->
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="1200">
+
+                    <img src="images/pic.png">
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello, I'm Ribhav, welcome to my portfolio! I'm a student , passionate about learning new things. With a strong commitment to continuous growth and innovation, I strive to make a positive impact through my work.</p><br>
-                    <p>I'm pursuing my Masters in computer applications (MCA) from Chandigarh group of collegs, Landran</p><br>
-                    <p>Thank you for taking the time to explore my portfolio and get to know a bit about me. If you have any questions, would like to collaborate, or simply want to connect, I'd love to hear from you. Let's create something remarkable together!</p>
+                <!-- <div class="about-col-2"> -->
+                <div class="about-col-2" data-aos="fade-left" data-aos-duration="1200">
+
+                    <p>Hello, I'm Ribhav — a tech enthusiast driven by curiosity and impact. I’m currently pursuing my
+                        Master’s in Computer Applications (MCA) at Chandigarh Group of Colleges, Landran.</p><br>
+
+                    <p>With a strong foundation in web and mobile development, I’m passionate about crafting seamless
+                        digital experiences using Angular, .NET, Flutter, and modern UI/UX design. I enjoy tackling
+                        real-world problems through code, whether it's optimizing backend systems or designing intuitive
+                        interfaces.</p><br>
+
+                    <p>Currently, I’m working on projects ranging from pollution tax tracking systems to AI-assisted
+                        health platforms. I believe in learning by building and growing by collaborating.</p><br>
+
+                    <p>Let’s connect and create something extraordinary together!</p>
+
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,56 +73,63 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Designing</span><br>Web app Development</li>
-                            <li><span>DSA</span><br>Data Structure and algorithm</li>
-                            <li><span>DBMS</span><br>Database Management System</li>
-                            <li><span>Languages</span><br>HTML,CSS,Javascript,Python,C,C++</li>
-                            <li><span>Operating System</span><br>Windows,Linux</li>
+                            <li><span>Frontend</span><br>Angular, Flutter, HTML, CSS, JavaScript</li>
+                            <li><span>Backend</span><br>.NET Core, REST APIs, Node.js (learning)</li>
+                            <li><span>Database</span><br>SQL Server, MySQL, Firebase</li>
+                            <li><span>Mobile</span><br>Flutter for Android/iOS/Web</li>
+                            <li><span>Tools</span><br>Git, GitHub, Postman, VS Code</li>
+                            <li><span>Other</span><br>Data Structures & Algorithms (C++), DBMS, OS, Cloud (Basics)</li>
                         </ul>
+
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023 - Current</span><br>Training at C.S. Infotech (Chandigarh)</li>
-                            <li><span>FullStack Web Developer</li>
+                            <li><span>2024 - Present</span><br>Full Stack Developer</li>
+                            <li><span>2023 - 2024</span><br>Intern at C.S. Infotech – Full Stack Web Development</li>
                         </ul>
+
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2024</span><br>MCA from Chandigarh group of colleges, Landran</li>
-                            <li><span>2022</span><br>B.Sc from Government College, Ropar</li>
-                            <li><span>2018</span><br>12<sup>th</sup> from Shiwalik Public School, Ropar</li>
-                            <li><span>2016</span><br>10<sup>th</sup> from Shiwalik Public School, Ropar</li>
+                            <li><span>2024</span><br>MCA - Chandigarh Group of Colleges, Landran</li>
+                            <li><span>2022</span><br>B.Sc - Government College, Ropar</li>
+                            <li><span>2018</span><br>12<sup>th</sup> - Shiwalik Public School, Ropar</li>
+                            <li><span>2016</span><br>10<sup>th</sup> - Shiwalik Public School, Ropar</li>
                         </ul>
+
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
- <!-- ---------Services section--------    -->
+    <!-- ---------Services section--------    -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div data-aos="zoom-in" data-aos-delay="100">
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi incidunt aliquid consectetur dolore enim nostrum ea rem voluptatem recusandae ipsa, quibusdam, facilis quisquam magnam rerum, optio animi modi quae.</p>
+                    <h2>Web App Development</h2>
+                    <p>Building fast, scalable, and secure web apps using Angular and .NET. From clean UI to solid
+                        backend architecture.</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi incidunt aliquid consectetur dolore enim nostrum ea rem voluptatem recusandae ipsa, quibusdam, facilis quisquam magnam rerum, optio animi modi quae.</p>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>Flutter Mobile Apps</h2>
+                    <p>Cross-platform apps with beautiful UI and smooth UX. Whether it’s health, utility, or
+                        productivity — I build what matters.</p>
                     <a href="#">Learn More</a>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi incidunt aliquid consectetur dolore enim nostrum ea rem voluptatem recusandae ipsa, quibusdam, facilis quisquam magnam rerum, optio animi modi quae.</p>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>DSA & Problem Solving</h2>
+                    <p>Solving real-world problems using efficient algorithms. Practicing regularly using C++ to keep my
+                        logic sharp.</p>
                     <a href="#">Learn More</a>
                 </div>
+
             </div>
         </div>
     </div>
@@ -109,51 +138,79 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
+                <!-- <div class="work" data-aos="flip-left" data-aos-duration="1200">
                     <img src="images/work-1.png">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world, Download it from play store.</p>
+                        <p>The app connects you to the talented people around the world, Download it from play store.
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+
+                <div class="work" data-aos="flip-left" data-aos-duration="1200">
                     <img src="images/work-2.png">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world, Download it from play store.</p>
+                        <p>The app connects you to the talented people around the world, Download it from play store.
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
+
+                <div class="work" data-aos="flip-left" data-aos-duration="1200">
                     <img src="images/work-3.png">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world, Download it from play store.</p>
+                        <p>The app connects you to the talented people around the world, Download it from play store.
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
+                </div> -->
+
+                <div class="work" data-aos="flip-left" data-aos-duration="1200">
+                    <img src="images/Reactwebsite.png">
+                    <div class="layer">
+                        <h3>React E-Commerce Website</h3>
+                        <p>Built a responsive e-commerce app using React.js and Tailwind CSS with secure login, dynamic
+                            catalog, and real-time cart features. Deployed on Netlify.</p>
+                        <a href="https://reactwebsitejj.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
+
+                <div class="work" data-aos="flip-left" data-aos-duration="1200">
+                    <img src="images/Visualizer.png">
+                    <div class="layer">
+                        <h3>Sorting Visualizer (JS)</h3>
+                        <p>Interactive JavaScript app to visualize sorting algorithms with real-time animations and
+                            dynamic comparisons.</p>
+                        <a href="https://sorting-visualizerjs.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
             </div>
-            <a href="#"class="btn">See More</a>
+            <a href="#" class="btn">See More</a>
         </div>
     </div>
     <!-- ---------contact-section---------- -->
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>ribhav.maurya.rm@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>9478039214</p>
                     <div class="social-icons">
                         <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ribhav___/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ribhav-a828b21a7/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="images/Ribhav_resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
@@ -169,6 +226,12 @@
         </div>
     </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
