@@ -190,7 +190,7 @@ nav ul li a:hover:after{
 
 /* ---------Portfolio--------- */
 #portfolio {
-    padding: 50px 5%;
+    padding: 30px 0;
 }
 .work-list {
     display: grid;
