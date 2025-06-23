@@ -40,3 +40,30 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxSuHdBGGXINAxhbZA16i
         })
       .catch(error => console.error('Error!', error.message))
   })
+
+
+const dot = document.createElement('div');
+dot.classList.add('cursor-dot');
+document.body.appendChild(dot);
+
+const ring = document.createElement('div');
+ring.classList.add('cursor-ring');
+document.body.appendChild(ring);
+
+document.addEventListener('mousemove', e => {
+  const { clientX: x, clientY: y } = e;
+
+  dot.style.left = `${x}px`;
+  dot.style.top = `${y}px`;
+
+  ring.style.left = `${x}px`;
+  ring.style.top = `${y}px`;
+});
+
+// Add pulse on click
+document.addEventListener('click', () => {
+  ring.classList.add('pulse');
+  setTimeout(() => {
+    ring.classList.remove('pulse');
+  }, 400);
+});
